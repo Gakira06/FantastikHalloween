@@ -1,3 +1,4 @@
+import CatalogoPage from "./pages/CatalogoPage"
 
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
 
   return (
     <>
+      <CatalogoPage />
     </>
   )
 }
