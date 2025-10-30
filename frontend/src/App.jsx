@@ -1,4 +1,6 @@
 import HomePage from "./pages/HomePage"
+import CatalogoPage from "./pages/CatalogoPage"
+
 
 function App() {
 
@@ -6,6 +8,7 @@ function App() {
   return (
     <>
     <HomePage></HomePage>
+      <CatalogoPage />
     </>
   )
 }

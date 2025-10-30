@@ -1,0 +1,59 @@
+{
+  "fantasias": [
+    {
+      "id": "b9cd4305-b9b6-46e5-99de-a0478be21bec",
+      "nome": "Vampiro Clássico",
+      "descricao": "Capa longa, colete e dentes de vampiro.",
+      "imagem": "uploads\\vampiro.jpg",
+      "categoria": "Clássicos",
+      "preco": 190.00,
+      "oferta": 155.00
+    },
+    {
+      "id": "ff85b6f1-58c3-433a-af4a-58050bb7c71e",
+      "nome": "Astronauta (Macacão Laranja)",
+      "descricao": "Macacão completo com emblemas espaciais.",
+      "imagem": "uploads\\Astronauta.webp",
+      "categoria": "Profissões",
+      "preco": 220.50,
+      "oferta": 200.00
+    },
+    {
+      "id": "d45e47e1-f47e-42d2-9cf7-a9dc74be88e2",
+      "nome": "Bruxa",
+      "descricao": "Vestido elegante, luvas e acessórios.",
+      "imagem": "uploads\\image.png",
+      "categoria": "Terror",
+      "preco": 300.00,
+      "oferta": 250.00
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+      "nome": "Pirata dos Sete Mares",
+      "descricao": "Camisa com colete, tapa-olho e chapéu.",
+      "imagem": "uploads\\pirata.webp",
+      "categoria": "Aventura",
+      "preco": 175.00,
+      "oferta": 150.00
+    },
+    {
+      "id": "f0e1d2c3-b4a5-6789-0123-456789abcdef",
+      "nome": "Super-Herói (Capa Vermelha)",
+      "descricao": "Traje azul com capa vermelha e máscara.",
+      "imagem": "uploads\\heroi.jpg",
+      "categoria": "Heróis",
+      "preco": 210.00,
+      "oferta": 180.00
+    },
+    {
+      "id": "98765432-10ab-cdef-0123-456789abcdef",
+      "nome": "Múmia Egípcia",
+      "descricao": "Traje completo simulando bandagens.",
+      "imagem": "uploads\\mumia.webp",
+      "categoria": "Terror",
+      "preco": 130.00,
+      "oferta": 110.00
+    }
+  ],
+  "usuarios": []
+}
