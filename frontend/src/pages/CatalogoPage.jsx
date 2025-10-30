@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Categorias from "../components/Categorias";
+import Header from "../components/layout/HeaderCatalogo";
+import Footer from "../components/layout/Footer";
 
 const API_URL = "http://localhost:5001/fantasias";
 const API_URL_image = "http://localhost:5001";
@@ -47,9 +49,7 @@ const CatalogoPage = () => {
 
   return (
     <div className="bg-1">
-      <header className="p-10 bg-gray-500">
-        <div></div>
-      </header>
+      <Header/>
       <div className="mt-10">
         <Categorias filtroItems={filtrarItens} categorias={categorias} />
       </div>
@@ -86,6 +86,7 @@ const CatalogoPage = () => {
           );
         })}
       </ul>
+      <Footer/>
     </div>
   );
 };
