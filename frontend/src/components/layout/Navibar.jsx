@@ -15,7 +15,11 @@ const Navbar = () => {
           <Button className="hover:text-black w-full md:w-auto">
             Sobre Nós
           </Button>
-          <Button className="hover:text-black w-full md:w-auto">Contato</Button>
+          <Link to="/contato">
+            <Button className="hover:text-black w-full md:w-auto">
+              Contato
+            </Button>
+          </Link>
         </div>
 
         <div className="relative w-full md:w-auto mt-2 md:mt-0">

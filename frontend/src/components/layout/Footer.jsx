@@ -1,4 +1,6 @@
 import Logo from "/Logo.png";
+import { Link } from "react-router-dom";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -8,7 +10,9 @@ const Footer = () => {
         <div>
           {/* Logo (imagem será adicionada depois) */}
           <div className="mb-4">
-            <img src={Logo} alt="Logo" className="w-32 h-auto" />
+            <Link to="/">
+              <img src={Logo} alt="Logo" className="w-32 h-auto" />
+            </Link>
           </div>
           <p className="text-sm text-gray-400">
             UMA GRANDE SELEÇÃO DE FANTASIAS
@@ -16,18 +20,18 @@ const Footer = () => {
 
           {/* Ícones sociais */}
           <div className="flex space-x-3 mt-4">
-            <a href="#" className="hover:text-white">
+            <a href="#" className="hover:text-white cursor-pointer">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="#" className="hover:text-white">
+            <FaTwitter />
+            <a href="#" className="hover:text-white cursor-pointer">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="hover:text-white">
-              <i className="fab fa-youtube"></i>
+            <FaFacebookF />
+            <a href="#" className="hover:text-white cursor-pointer">
+              <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="hover:text-white">
-              <i className="fab fa-google-plus-g"></i>
-            </a>
+            <FaInstagram />
           </div>
         </div>
 
@@ -35,19 +39,23 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-3">INFORMAÇÕES</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-orange-500">
-                Home
-              </a>
+              <Link to="/">
+                <a href="home" className="hover:text-orange-500">
+                  Home
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-orange-500">
+              <a href="sobre" className="hover:text-orange-500">
                 Sobre Nós
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-orange-500">
-                Contato
-              </a>
+              <Link to="/contato">
+                <a href="contato" className="hover:text-orange-500">
+                  Contato
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
