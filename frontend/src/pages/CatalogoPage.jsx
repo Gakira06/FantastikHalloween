@@ -49,7 +49,7 @@ const CatalogoPage = () => {
 
   return (
     <div className="bg-1">
-      <Header/>
+      <Header />
       <div className="mt-10">
         <Categorias filtroItems={filtrarItens} categorias={categorias} />
       </div>
@@ -58,15 +58,16 @@ const CatalogoPage = () => {
           const imagePath = item.imagem.replace(/\\/g, "/");
           const imageUrl = `${API_URL_image}/${imagePath}`;
           return (
-            <li
-              key={item.id}
-              className="flex flex-col items-center"
-            >
+            <li key={item.id} className="flex flex-col items-center">
               <div className="bg-2 p-4 shadow shadow-1 border border-s-1">
-                <div className="w-70 h-90">
+                <div
+                  className="w-full max-w-xs mx-auto flex items-center justify-center bg-white rounded-lg overflow-hidden"
+                  style={{ aspectRatio: "3/4" }}
+                >
                   <img
                     src={imageUrl}
-                    className="w-full h-full object-contain"
+                    alt={item.nome}
+                    className="w-full h-auto max-h-80 object-contain"
                   />
                 </div>
                 <div>
@@ -81,12 +82,14 @@ const CatalogoPage = () => {
                   </p>
                 </div>
               </div>
-              <button className="pt-2 pb-2 pl-16 pr-16 mt-6 bg-3 rounded-2xl hover:bg-orange-700 ">Comprar</button>
+              <button className="pt-2 pb-2 pl-16 pr-16 mt-6 bg-3 rounded-2xl hover:bg-orange-700 ">
+                Comprar
+              </button>
             </li>
           );
         })}
       </ul>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
