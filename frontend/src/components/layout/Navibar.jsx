@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="relative w-full md:w-auto mt-2 md:mt-0">
           <input
             type="text"
-            className="bg-white rounded-full py-2.5 pl-5 pr-12 text-gray-500 font-sans text-sm focus:outline-none focus:ring-2 focus:ring-orange-300 w-full md:w-64"
+            className="bg-white rounded-full py-2.5 pl-5 pr-12 text-gray-500 font-sans text-sm focus:outline-none focus:ring-orange-300 w-full md:w-64"
           />
           <Button className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-black">
             <img src="/IconSearch.png" alt="Icon Pesquisa" />

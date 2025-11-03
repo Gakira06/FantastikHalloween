@@ -6,8 +6,8 @@
       "descricao": "Capa longa, colete e dentes de vampiro.",
       "imagem": "uploads\\vampiro.jpg",
       "categoria": "Clássicos",
-      "preco": 190.00,
-      "oferta": 155.00
+      "preco": 190,
+      "oferta": 155
     },
     {
       "id": "ff85b6f1-58c3-433a-af4a-58050bb7c71e",
@@ -15,8 +15,8 @@
       "descricao": "Macacão completo com emblemas espaciais.",
       "imagem": "uploads\\Astronauta.webp",
       "categoria": "Profissões",
-      "preco": 220.50,
-      "oferta": 200.00
+      "preco": 220.5,
+      "oferta": 200
     },
     {
       "id": "d45e47e1-f47e-42d2-9cf7-a9dc74be88e2",
@@ -24,8 +24,8 @@
       "descricao": "Vestido elegante, luvas e acessórios.",
       "imagem": "uploads\\image.png",
       "categoria": "Terror",
-      "preco": 300.00,
-      "oferta": 250.00
+      "preco": 300,
+      "oferta": 250
     },
     {
       "id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
@@ -33,8 +33,8 @@
       "descricao": "Camisa com colete, tapa-olho e chapéu.",
       "imagem": "uploads\\pirata.webp",
       "categoria": "Aventura",
-      "preco": 175.00,
-      "oferta": 150.00
+      "preco": 175,
+      "oferta": 150
     },
     {
       "id": "f0e1d2c3-b4a5-6789-0123-456789abcdef",
@@ -42,8 +42,8 @@
       "descricao": "Traje azul com capa vermelha e máscara.",
       "imagem": "uploads\\heroi.jpg",
       "categoria": "Heróis",
-      "preco": 210.00,
-      "oferta": 180.00
+      "preco": 210,
+      "oferta": 180
     },
     {
       "id": "98765432-10ab-cdef-0123-456789abcdef",
@@ -51,9 +51,16 @@
       "descricao": "Traje completo simulando bandagens.",
       "imagem": "uploads\\mumia.webp",
       "categoria": "Terror",
-      "preco": 130.00,
-      "oferta": 110.00
+      "preco": 130,
+      "oferta": 110
     }
   ],
-  "usuarios": []
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Admin",
+      "email": "admin@admin.com",
+      "senha": "1234"
+    }
+  ]
 }

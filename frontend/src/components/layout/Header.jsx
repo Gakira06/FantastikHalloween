@@ -7,27 +7,33 @@ export default function Header() {
   const [senha, setSenha] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
     setError("");
-      try {
-      const response = await fetch("http://localhost:5001/contato", {
+    setSuccess("");
+    try {
+      const response = await fetch("http://localhost:5001/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, senha }),
       });
+      const data = await response.json();
       if (!response.ok) {
-        const data = await response.json();
         setError(data.message || "Erro ao logar");
       } else {
-        setShowModal(false);
-        setEmail("");
-        setSenha("");
+        setSuccess("Login realizado com sucesso!");
+        localStorage.setItem("usuario", JSON.stringify(data.usuario));
+        setTimeout(() => {
+          setShowModal(false);
+          setEmail("");
+          setSenha("");
+          setSuccess("");
+        }, 1500);
       }
-    } catch (error) {
-      console.error(error);
+    } catch {
       setError("Erro de conexão");
     }
     setLoading(false);
@@ -100,6 +106,11 @@ export default function Header() {
               {error && (
                 <span className="text-red-600 text-xs text-center">
                   {error}
+                </span>
+              )}
+              {success && (
+                <span className="text-green-600 text-xs text-center">
+                  {success}
                 </span>
               )}
             </form>
