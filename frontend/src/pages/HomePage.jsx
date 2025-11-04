@@ -2,11 +2,11 @@ import Navibar from "../components/layout/Navibar";
 import Header from "../components/layout/Header";
 import HomeImage from "../assets/Menina.jpg";
 import Footer from "../components/layout/Footer";
-import Background from "../assets/Background.jpg"
+
 
 const HomePage = () => {
   return (
-    <div src={Background}>
+    <div>
       <Header></Header>
       <Navibar></Navibar>
       <div className="relative w-screen max-h-96">
