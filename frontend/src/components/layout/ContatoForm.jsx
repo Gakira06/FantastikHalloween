@@ -1,3 +1,5 @@
+import Button from "../common/Button";
+
 const ContatoForm = () => {
   return (
     
@@ -18,12 +20,12 @@ const ContatoForm = () => {
           rows="5"
           className="w-full p-3 bg-white border border-gray-300 rounded-md focus:outline-none "
         ></textarea>
-        <button
+        <Button
           type="submit"
           className="w-32 bg-orange-700 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-400 transition-colors duration-300 cursor-pointer"
         >
           Enviar
-        </button>
+        </Button>
       </div>
     </form>
   );

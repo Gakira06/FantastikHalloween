@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Categorias from "../components/Categorias";
 import Header from "../components/layout/HeaderCatalogo";
 import Footer from "../components/layout/Footer";
 import Navibar from "../components/layout/Navibar"
+import Button from "../components/common/Button"
 
 const API_URL = "http://localhost:5001/fantasias";
 const API_URL_image = "http://localhost:5001";
@@ -84,9 +85,9 @@ const CatalogoPage = () => {
                   </p>
                 </div>
               </div>
-              <button className="pt-2 pb-2 pl-16 pr-16 mt-6 bg-3 rounded-2xl hover:bg-orange-700 ">
+              <Button className="pt-2 pb-2 pl-16 pr-16 mt-6 bg-3 rounded-2xl hover:bg-orange-700 ">
                 Comprar
-              </button>
+              </Button>
             </li>
           );
         })}

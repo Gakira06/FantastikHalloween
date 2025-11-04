@@ -73,12 +73,12 @@ export default function Header() {
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
           <div className="bg-white rounded-xl p-6 w-full max-w-xs shadow-lg relative">
-            <button
+            <Button
               className="absolute top-2 right-2 text-black text-xl"
               onClick={() => setShowModal(false)}
             >
               &times;
-            </button>
+            </Button>
             <h2 className="text-lg font-bold mb-4 text-center text-black">
               Login
             </h2>
@@ -99,13 +99,13 @@ export default function Header() {
                 className="border rounded px-3 py-2 text-black"
                 required
               />
-              <button
+              <Button
                 type="submit"
                 className="bg-orange-600 text-white font-bold py-2 rounded hover:bg-orange-700"
                 disabled={loading}
               >
                 {loading ? "Entrando..." : "Entrar"}
-              </button>
+              </Button>
               {error && (
                 <span className="text-red-600 text-xs text-center">
                   {error}

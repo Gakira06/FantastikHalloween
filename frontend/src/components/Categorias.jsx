@@ -1,16 +1,18 @@
+import Button from "./common/Button"
+
 const Categorias = ({ categorias, filtroItems }) => {
   return (
     <div className="flex flex-col items-center">
       <h2 className="text-orange-600 font-bold text-3xl">Selecione por Categoria</h2>
       <nav className="flex justify-center flex-wrap gap-4 mb-12 mt-8">
         {categorias.map((categoria, index) => (
-          <button
+          <Button
             key={index}
             onClick={() => filtroItems(categoria)}
             className="bg-white text-black font-bold border-none rounded-lg px-5 py-3 text-base cursor-pointer transition-all duration-300 ease-in-out shadow-md hover:bg-orange-700 hover:scale-105 hover:shadow-lg focus:outline-none  focus:ring-red-700 focus:ring-opacity-50"
           >
             {categoria}
-          </button>
+          </Button>
         ))}
       </nav>
     </div>
