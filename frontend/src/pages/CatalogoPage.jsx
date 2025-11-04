@@ -3,6 +3,7 @@ import axios from "axios";
 import Categorias from "../components/Categorias";
 import Header from "../components/layout/HeaderCatalogo";
 import Footer from "../components/layout/Footer";
+import Navibar from "../components/layout/Navibar"
 
 const API_URL = "http://localhost:5001/fantasias";
 const API_URL_image = "http://localhost:5001";
@@ -50,6 +51,7 @@ const CatalogoPage = () => {
   return (
     <div className="bg-1">
       <Header />
+      <Navibar />
       <div className="mt-10">
         <Categorias filtroItems={filtrarItens} categorias={categorias} />
       </div>
