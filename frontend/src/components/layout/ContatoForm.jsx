@@ -20,7 +20,7 @@ const ContatoForm = () => {
         ></textarea>
         <button
           type="submit"
-          className="w-32 bg-orange-400 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300 cursor-pointer"
+          className="w-32 bg-orange-700 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-400 transition-colors duration-300 cursor-pointer"
         >
           Enviar
         </button>

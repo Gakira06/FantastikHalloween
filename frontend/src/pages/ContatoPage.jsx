@@ -16,7 +16,7 @@ function ContatoPage() {
           </div>
 
           
-          <div className="relative bg-orange-400 p-4 sm:p-8 pt-16 sm:pt-24 md:p-8 lg:p-16 rounded-md">
+          <div className="relative bg-orange-700 p-4 sm:p-8 pt-16 sm:pt-24 md:p-8 lg:p-16 rounded-md">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-center">
               
               <div className="text-white">
@@ -24,7 +24,7 @@ function ContatoPage() {
                   ENTRAR EM CONTATO
                 </h2>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-light mb-6">
-                  Ei! Estamos ansiosos para falar você!
+                  Ei! Estamos ansiosos para atender você!
                 </h3>
                 <br />
                 <br />
@@ -32,19 +32,19 @@ function ContatoPage() {
                 <div className="flex flex-wrap gap-2 sm:gap-4 ">
                   <a
                     href="#"
-                    className="bg-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-orange-400 hover:bg-gray-200 transition-colors"
+                    className="bg-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-colors"
                   >
                     <FaFacebookF />
                   </a>
                   <a
                     href="#"
-                    className="bg-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-orange-400 hover:bg-gray-200 transition-colors"
+                    className="bg-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-colors"
                   >
                     <FaTwitter />
                   </a>
                   <a
                     href="#"
-                    className="bg-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-orange-400 hover:bg-gray-200 transition-colors "
+                    className="bg-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-colors "
                   >
                     <FaInstagram />
                   </a>

@@ -12,9 +12,11 @@ const Navbar = () => {
               Produtos
             </Button>
           </Link>
-          <Button className="hover:text-black w-full md:w-auto">
-            Sobre Nós
-          </Button>
+          <Link to="/sobre">
+            <Button className="hover:text-black w-full md:w-auto">
+              Sobre Nós
+            </Button>
+          </Link>
           <Link to="/contato">
             <Button className="hover:text-black w-full md:w-auto">
               Contato
