@@ -9,7 +9,7 @@ const HomePage = () => {
     <div>
       <Header></Header>
       <Navibar></Navibar>
-      <div className="relative w-screen max-h-96">
+      <div className="relative max-h-96">
         <img
           src={HomeImage}
           alt="Home Image"
@@ -21,7 +21,7 @@ const HomePage = () => {
           </span>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

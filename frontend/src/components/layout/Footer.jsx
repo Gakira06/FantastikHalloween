@@ -20,15 +20,15 @@ const Footer = () => {
 
           {/* Ícones sociais */}
           <div className="flex space-x-3 mt-4">
-            <a href="#" className="hover:text-white cursor-pointer">
+            <a href="logo-twitter" className="hover:text-white cursor-pointer">
               <i className="fab fa-twitter"></i>
             </a>
             <FaTwitter />
-            <a href="#" className="hover:text-white cursor-pointer">
+            <a href="logo-facebook" className="hover:text-white cursor-pointer">
               <i className="fab fa-facebook-f"></i>
             </a>
             <FaFacebookF />
-            <a href="#" className="hover:text-white cursor-pointer">
+            <a href="logo-instagram" className="hover:text-white cursor-pointer">
               <i className="fab fa-instagram"></i>
             </a>
             <FaInstagram />
@@ -40,21 +40,21 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li>
               <Link to="/">
-                <a href="home" className="hover:text-orange-500">
+                <span href="home" className="hover:text-orange-500">
                   Home
-                </a>
+                </span>
               </Link>
             </li>
             <li>
-              <a href="sobre" className="hover:text-orange-500">
+              <span href="sobre" className="hover:text-orange-500">
                 Sobre Nós
-              </a>
+              </span>
             </li>
             <li>
               <Link to="/contato">
-                <a href="contato" className="hover:text-orange-500">
+                <span href="contato" className="hover:text-orange-500">
                   Contato
-                </a>
+                </span>
               </Link>
             </li>
           </ul>
